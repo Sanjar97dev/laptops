@@ -15,8 +15,8 @@ body{
 
 .container{
     margin: 0 auto;
-    max-width: 1000px;
-    min-width: 500px;
+    max-width: clamp(400px, 0 ,1000px);
+    
     background-color: black;
 }
 
@@ -46,14 +46,15 @@ input{
     display: none;
 }
 
+
+
 .btn button{
+    
     border-radius: 20px;
    background-color: black;
-   padding: 2px 8px;
    color: #3bd9d9;
-   letter-spacing: 3px;
-   font-weight: bold;
-   font-size: 15px;
+   font-size: clamp(12px, 12px, 26px);
+   font-weight: 500;
    text-transform: uppercase;
    position: relative;
    overflow: hidden;
@@ -61,6 +62,7 @@ input{
    box-shadow: 0.3s;
    border-color: 0.3s;
 }
+
 
 .btn button:hover{
     background-color: black;
@@ -94,7 +96,7 @@ input{
     gap: 5px;
     background-color: black;
     color: #00ffff;
-    width: 1000px;
+    width: clamp(400px, 0, 1000px);
     margin: 0 auto;
 }
 
