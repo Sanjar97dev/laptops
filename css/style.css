@@ -1,0 +1,124 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 500px;
+    background-color: black;
+}
+
+.laptop{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background-color: darkblue;
+    border-radius: 15px;
+    border: 2px solid #3bd9d9;
+}
+
+.search{
+    margin-left: 20px;
+}
+
+input{
+   
+    padding: 2px 30px;
+    border-radius: 10px;
+    color: silver;
+}
+
+#spinner{
+    display: none;
+}
+
+.btn button{
+    border-radius: 20px;
+   background-color: black;
+   padding: 2px 8px;
+   color: #3bd9d9;
+   letter-spacing: 3px;
+   font-weight: bold;
+   font-size: 15px;
+   text-transform: uppercase;
+   position: relative;
+   overflow: hidden;
+   transition: color 0.3s;
+   box-shadow: 0.3s;
+   border-color: 0.3s;
+}
+
+.btn button:hover{
+    background-color: black;
+    box-shadow:  
+    0 10px rgba(0,255,255,1),
+    0 10px rgba(0,255,255,7);
+    border-color: #00ffff;
+    color: #00ffff;
+}
+
+.btn button.before{
+    content: '';
+    top: -10px;
+    left: -70px;
+    position: absolute;
+    width: 40px;
+    height: 125px;
+    background-color: #00ffff;
+    transform: skewX(-20deg);
+    filter: blur(15px);
+}
+
+.btn:hover::before{
+    transform: translate(300px) skewX(20deg);
+    transition: transform 0.7s;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    background-color: black;
+    color: #00ffff;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.price{
+    margin-bottom: 30px;
+}
+
+.spin{
+    height: 50px;
+    color: #00ffff;
+    margin-left: 20px;
+}
+
+.list h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.list h6 p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 5px;
+}
+
+.list img{
+    margin: 10px 0;
+}
